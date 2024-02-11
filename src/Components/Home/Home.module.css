@@ -1,0 +1,121 @@
+.home {
+    /* background-color: #111111; */
+    background: url('../../Assets/background.jpeg') center/cover;
+    height: 695px;
+}
+
+.homecontent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 695px;
+    background: #111111;
+    opacity: .85;
+}
+
+
+.homecontentinfo{
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 28%;
+    width: 100%;
+    z-index: 9;
+    height: 91.3px;
+    /* display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    transform: translateY(-2.1rem); */
+}
+
+.homecontentinfo h5{
+    color: #cc005f;
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.565;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.homecontentinfo h1{
+    color: #FFFFFF;
+    font-family: "poppins-medium", sans-serif;
+    font-size: 74px;
+    line-height: 1.071;
+    max-width: 900px;
+    margin-top: 0;
+    margin-bottom: 84px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width:600px) {
+    .homecontentinfo h1{
+        font-size: 40px;
+    }
+}
+
+.homecontentinfo p{
+    margin-top: -70px;
+}
+
+.homecontentinfo p span{
+    font-family: "lora-regular", serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .05rem;
+    color: #FFFFFF;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.homecontentinfo p span:first-child::before{
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.homecontentinfo p span::after{
+    content: "|";
+    text-align: center;
+    display: inline-block;
+    padding: 0 14px 0 8px;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.homecontentinfo button{
+    color: #FFFFFF !important;
+    border: 3.5px solid #313131;
+    height: 3.8rem !important;
+    line-height: 2.4rem !important;
+    padding: 0 2.5rem 0 2rem !important;
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 550;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.homecontentinfo button:hover{
+    cursor: pointer;
+    border-color: #cc005f;
+}
+
+.homecontentinfo button::after{
+    display: inline-block;
+    content: "\f107";
+    font-family: 'fontAwesome', sans-serif;
+    font-size: 0.9rem;
+    line-height: inherit;
+    text-align: center;
+    position: relative;
+    left: 1.2rem;
+}

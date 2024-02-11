@@ -1,0 +1,171 @@
+.projects{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.projectsHeader{
+    margin-bottom: 50px;
+}
+
+.projectsHeader h5{
+    text-align: center      ;
+    color: #FF0077;
+    font-size: 1rem;
+    line-height: 1.875;
+    margin-bottom: 0.2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-family: "poppins-bold", sans-serif;
+    font-style: normal;
+    display: block;
+    margin-block-start: 1.67em; /* need to be understood */
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.projectsHeader h1{
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 2.4rem;
+    color: #313131;
+    line-height: 1.05;
+    display: block;
+    margin-bottom: 1.2rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -.05rem;
+}
+
+.projectsHeader p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: "lora-regular", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #888888;
+    text-align: center;
+}
+
+.myprojects{
+    width: 94%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.myprojectsContent{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+.inflow,
+.portfolio,
+.foodOrderApp,
+.movies {
+    flex: 0 0 calc(50% - 20px);
+    margin: 10px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inflow img,
+.portfolio img,
+.foodOrderApp img,
+.movies img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+}
+
+.imgDescription{
+    opacity: 0;
+    position: absolute;
+    inset: 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, -4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    transform: translateX(-100%);
+}
+.imgDescription h2{
+    font-size: 20px;
+    font-family: "poppins-semibold", sans-serif;
+    text-align: center;
+}
+
+.imgDescription p{
+    font-size: 15px;
+    font-family: "poppins-semibold", sans-serif;
+    color:#313131;
+    font-weight: 500;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imgDescription button{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: transparent;
+    transition: 0.5s ease-in-out;
+}
+
+.imgDescription button:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.inflow:hover img,
+.portfolio:hover img, 
+.foodOrderApp:hover img,
+.movies:hover img {
+    opacity: 0.3;
+    filter: blur(3px);
+    transform: scale(1.1);
+}
+
+.inflow:hover .imgDescription,
+.portfolio:hover .imgDescription,
+.foodOrderApp:hover .imgDescription,
+.movies:hover .imgDescription {
+    opacity: 1;
+    transform: translateX(0%);
+}
+
+
+@media (max-width:899px) {
+    .foodOrderApp{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .movies{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .inflow{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .portfolio{
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
