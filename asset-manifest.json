@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.cb6eee4e.css",
+    "main.js": "/Portfolio/static/js/main.5bd74763.js",
+    "static/media/INFlow.png": "/Portfolio/static/media/INFlow.40949e9235161a954b70.png",
+    "static/media/portfolio.png": "/Portfolio/static/media/portfolio.18b2eae859dc6db7d98a.png",
+    "static/media/FoodOrderApp.png": "/Portfolio/static/media/FoodOrderApp.9ffc1b78b539eb925549.png",
+    "static/media/background.jpeg": "/Portfolio/static/media/background.ad488d6b68922e9ed0a3.jpeg",
+    "static/media/MostafaGamalElnaggar.pdf": "/Portfolio/static/media/MostafaGamalElnaggar.81b63bb0167a8247b92a.pdf",
+    "static/media/profilephoto.jpeg": "/Portfolio/static/media/profilephoto.5043b02e82e25e15dded.jpeg",
+    "static/media/Movies.png": "/Portfolio/static/media/Movies.2d8e9fb5a312cba0a145.png",
+    "static/media/code.png": "/Portfolio/static/media/code.bfe3593bdb74aa231876.png",
+    "static/media/github2.png": "/Portfolio/static/media/github2.44eee0c4a6c25b0d7347.png",
+    "static/media/mail.png": "/Portfolio/static/media/mail.2c378c9ee25927123f7d.png",
+    "static/media/phoneCall.png": "/Portfolio/static/media/phoneCall.d35848942c955a6232b3.png",
+    "index.html": "/Portfolio/index.html",
+    "main.cb6eee4e.css.map": "/Portfolio/static/css/main.cb6eee4e.css.map",
+    "main.5bd74763.js.map": "/Portfolio/static/js/main.5bd74763.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cb6eee4e.css",
+    "static/js/main.5bd74763.js"
+  ]
+}
