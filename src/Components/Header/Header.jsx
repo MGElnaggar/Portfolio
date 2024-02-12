@@ -110,7 +110,10 @@ const Header = () => {
     return(
         <header className={`${classes.header} ${scrollPosition >= 5 ? classes.scrolledHeader : ''}`}>
             <div className={classes.container}>
-                <div className={`${classes.logo} ${scrollPosition >= 5 ? classes.scrolledLogo : ''}`}>
+                <div
+                    onClick={handleHomeClick}
+                    className={`${classes.logo} ${scrollPosition >= 5 ? classes.scrolledLogo : ''}`}
+                >
                     <img src={logo} alt='portfolio' />
                     <p>Mostafa Elnaggar</p>
                 </div>
