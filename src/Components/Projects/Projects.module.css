@@ -169,3 +169,33 @@
         width: 100%;
     }
 }
+
+@media (max-width:499px){
+    .imgDescription h2{
+        font-size: 15px;
+    }
+    
+    .imgDescription p{
+        font-size: 10px;
+    }
+    
+    .imgDescription button{
+        width: 150px;
+        height: 30px;
+    }
+}
+
+@media (max-width:339px){
+    .imgDescription h2{
+        font-size: 13px;
+    }
+    
+    .imgDescription p{
+        font-size: 8px;
+    }
+    
+    .imgDescription button{
+        width: 140px;
+        height: 25px;
+    }
+}
