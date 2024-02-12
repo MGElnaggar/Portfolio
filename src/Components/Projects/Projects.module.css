@@ -185,6 +185,22 @@
     }
 }
 
+
+@media (max-width:383px){
+    .imgDescription h2{
+        font-size: 14px;
+    }
+    
+    .imgDescription p{
+        font-size: 9px;
+    }
+    
+    .imgDescription button{
+        width: 140px;
+        height: 25px;
+    }
+}
+
 @media (max-width:339px){
     .imgDescription h2{
         font-size: 13px;
