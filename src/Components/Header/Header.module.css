@@ -74,7 +74,6 @@
     cursor: pointer;
 }
 
-
 /* navbar and its tags */
 
 
@@ -306,5 +305,17 @@
       margin-left: 5px;
       cursor: pointer;
     }
-  }
-  
+}
+
+@media (max-width:410px) {
+    .logo p{
+        font-size: 13px;
+    }
+    .scrolledLogo p{
+        font-size: 13px;
+    }
+    .mobileMenu span {
+        font-size: 30px;
+        color: white;
+      }
+} 
