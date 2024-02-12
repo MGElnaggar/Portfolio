@@ -1,5 +1,4 @@
 .home {
-    /* background-color: #111111; */
     background: url('../../Assets/background.jpeg') center/cover;
     height: 695px;
 }
@@ -24,10 +23,12 @@
     width: 100%;
     z-index: 9;
     height: 91.3px;
-    /* display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    transform: translateY(-2.1rem); */
+}
+
+
+@keyframes typing {
+    from { width: 0% }
+    to { width: 100% }
 }
 
 .homecontentinfo h5{
@@ -36,10 +37,18 @@
     font-size: 1.3rem;
     line-height: 1.565;
     margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
     text-transform: uppercase;
     letter-spacing: .15rem;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 5s steps(200, end) forwards, cursor-blink 0.5s infinite; 
+    animation-delay: 0.5s;
 }
+
 
 .homecontentinfo h1{
     color: #FFFFFF;
@@ -52,16 +61,26 @@
     margin-left: auto;
     margin-right: auto;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 4s steps(200, end) forwards, cursor-blink 0.5s infinite;
+    animation-delay: 1.5s;
 }
 
-@media (max-width:600px) {
-    .homecontentinfo h1{
-        font-size: 40px;
-    }
-}
+
 
 .homecontentinfo p{
     margin-top: -70px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .homecontentinfo p span{
@@ -71,7 +90,11 @@
     letter-spacing: .05rem;
     color: #FFFFFF;
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 3.5s; 
 }
+
 
 .homecontentinfo p span:first-child::before{
     content: "|";
@@ -102,7 +125,11 @@
     letter-spacing: 0.1rem;
     background-color: transparent;
     transition: all 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    animation-delay: 3.5s; 
 }
+
 
 .homecontentinfo button:hover{
     cursor: pointer;
@@ -111,11 +138,51 @@
 
 .homecontentinfo button::after{
     display: inline-block;
-    content: "\f107";
-    font-family: 'fontAwesome', sans-serif;
-    font-size: 0.9rem;
+    content: "\2193";
+    font-family: 'fontAwesome',sans-serif;
+    font-size: 1.9rem;
     line-height: inherit;
     text-align: center;
     position: relative;
     left: 1.2rem;
+}
+
+@media (max-width:788px) {
+    .homecontentinfo h1{
+        font-size: 57px;
+    }
+}
+
+@media (max-width:600px) {
+    .homecontentinfo h1{
+        font-size: 40px;
+    }
+    .homecontentinfo h5{
+        font-size: 1rem;
+    }
+    .homecontentinfo p span{
+        font-size: 0.9rem;
+    }
+    .homecontentinfo button{
+        height: 2.8rem !important;
+        line-height: 0rem !important;
+        padding: 0 2.5rem 0.2rem 2rem !important;
+        margin-top: 0.6rem;
+        font-size: 0.7rem;
+    }
+    .homecontentinfo button::after{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:410px) {
+    .homecontentinfo h1{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:310px) {
+    .homecontentinfo h1{
+        font-size: 25px;
+    }
 }
