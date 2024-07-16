@@ -1,6 +1,6 @@
 .home {
-    background: url('../../Assets/background.jpeg') center/cover;
-    height: 695px;
+    background: url('../../Assets/homebackground.jpg') center/cover;
+    height: 100vh;
 }
 
 .homecontent{
@@ -8,7 +8,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 695px;
+    height: 100vh;
     background: #111111;
     opacity: .85;
 }

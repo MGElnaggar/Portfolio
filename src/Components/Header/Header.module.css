@@ -10,7 +10,6 @@
 .scrolledHeader{
     background-color:white;
     transition: all 0.3s ease-in-out;
-    /* border-bottom: 2px solid black; */
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
 
@@ -103,7 +102,6 @@
 .navtags ul li{
     display: inline-block;
     margin-right: 45px;
-    /* text-align: -webkit-match-parent; */
 }
 
 .navtags ul li a{
@@ -129,7 +127,7 @@
 }
 
 
-/* the bar the uber the tag , its style and when hover and when active */
+/* the bar the upper the tag , its style and when hover and when active */
 
 
 .navtags ul li a:after {
@@ -197,7 +195,6 @@
 .scrolledsocial img{
     color: black;
 }
-
 
 /* begainning of the @media to make the page responsive */
 
@@ -318,4 +315,7 @@
         font-size: 30px;
         color: white;
       }
-} 
+      .scrolledMobileMenu span{
+        color: black;
+    }
+}

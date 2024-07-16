@@ -1,7 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 import Home from "./Components/Home/Home";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Header from "./Components/Header/Header";

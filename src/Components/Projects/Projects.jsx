@@ -1,20 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import FoodOrderApp from '../../Assets/FoodOrderApp.png';
 import Portfolio from '../../Assets/portfolio.png';
 import Movies from '../../Assets/Movies.png';
 import Inflow from '../../Assets/INFlow.png';
-// import Traveling from '../../Assets/Traveling.png';
 
 
 import classes from './Projects.module.css';
 
 const Projects = () => {
     
-    const [inflowUrl, setInflowUrl] = useState('https://github.com/MGElnaggar/INFlow');
-    const [bookingUrl, setBookinfUrl] = useState('https://github.com/MGElnaggar?tab=repositories');
-    const [foodOrderUrl, setFoodOrderUrl] = useState('https://github.com/MGElnaggar/Food-Order-App');
-    const [moviesUrl, setMoviesUrl] = useState('https://github.com/MGElnaggar/Movies');
+    const inflowUrl = 'https://github.com/MGElnaggar/INFlow';
+    const bookingUrl = 'https://github.com/MGElnaggar?tab=repositories';
+    const foodOrderUrl = 'https://github.com/MGElnaggar/Food-Order-App';
+    const moviesUrl = 'https://github.com/MGElnaggar/Movies';
     
     const handleINFlowClick = () => {
         window.open(inflowUrl, '_blank');
@@ -30,7 +29,7 @@ const Projects = () => {
     };
       
     return(
-        <div style={{backgroundColor:'#ebebeb'}}>
+        <div style={{backgroundColor:'#ebebeb'}} id='Projects'>
             <div className={classes.projects}>
                 <div className={classes.projectsHeader}>
                     <h5>Projects</h5>

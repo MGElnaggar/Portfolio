@@ -11,8 +11,8 @@ const Header = () => {
 
     const [isMobile, setIsMobile] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const [linkedinUrl, setLinkedinUrl] = useState('https://www.linkedin.com/in/mostafa-el-naggar-074bb91b2/');
-    const [githubUrl, setGithubUrl] = useState('https://github.com/MGElnaggar');
+    const linkedinUrl = 'https://www.linkedin.com/in/mostafa-el-naggar-074bb91b2/';
+    const githubUrl = 'https://github.com/MGElnaggar';
     const [scrollPosition, setScrollPosition] = useState(0);
 
     const handleScroll = () => {
@@ -64,46 +64,33 @@ const Header = () => {
     };
 
     const handleAboutClick = () => {
-        window.scrollTo({
-            top: 605,
-            left: 0,
-            behavior: 'smooth'
-        });
+        const aboutMeSection = document.getElementById('AboutMe');
+        if (aboutMeSection) {
+            aboutMeSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
     };
 
     const handleProjectsClick = () => {
-        let scrollPosition;
-        if (window.innerWidth <= 499) {
-            scrollPosition = 2750;
-        }else if (window.innerWidth <= 749 && window.innerWidth > 499) {
-            scrollPosition = 2550;
-        }else if (window.innerWidth <= 899 && window.innerWidth > 749) {
-            scrollPosition = 1850;
-        }else {
-            scrollPosition = 1780;
+        const projectsSection = document.getElementById('Projects');
+        if (projectsSection) {
+            projectsSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
-        window.scrollTo({
-            top: scrollPosition,
-            left: 0,
-            behavior: 'smooth'
-        });
     };
     const handleContactClick = () => {
-        let scrollPosition;
-        if (window.innerWidth <= 499) {
-            scrollPosition = 4100;
-        } else if (window.innerWidth <= 749 && window.innerWidth > 499) {
-            scrollPosition = 4050;
-        }else if (window.innerWidth <= 899 && window.innerWidth > 749) {
-            scrollPosition = 3700;
-        }else {
-            scrollPosition = 2700;
+        // 
+        const contactMeSection = document.getElementById('ContactMe');
+        if (contactMeSection) {
+            contactMeSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
-        window.scrollTo({
-            top: scrollPosition,
-            left: 0,
-            behavior: 'smooth'
-        });
     };
 
 
@@ -162,9 +149,9 @@ const Header = () => {
                             </button>
                         </div>
                     </div>
-                    )}
+                )}
 
-                    {isMobile && (
+                {isMobile && (
                     <div 
                         className={`${classes.mobileMenu} ${scrollPosition >= 5 ? classes.scrolledMobileMenu : ''}`} 
                         onClick={toggleDropdown}
@@ -173,9 +160,9 @@ const Header = () => {
                             {isDropdownOpen ? '✕' : '≡'}
                         </span>
                     </div>
-                    )}
+                )}
 
-                    {isMobile && isDropdownOpen && (
+                {isMobile && isDropdownOpen && (
                     <div className={classes.mobileNav}>
                         <ul>
                             <li> <a onClick={handleHomeClick}>Home</a> </li>

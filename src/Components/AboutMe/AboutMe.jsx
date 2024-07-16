@@ -1,11 +1,14 @@
 import profilephoto from '../../Assets/profilephoto.jpeg';
-import MyCV from '../../Assets/MostafaGamalElnaggar.pdf';
+
+import MyCV from '../../Assets/MostafaElNaggar.pdf';
+
 
 import classes from './AboutMe.module.css';
 
 const AboutMe = () => {
     return(
-        <div className={classes.aboutMe}>
+
+        <div className={classes.aboutMe} id='AboutMe'>
 
             <div className={classes.aboutMeHeader}>
                 <h5>About</h5>
@@ -15,9 +18,14 @@ const AboutMe = () => {
             <div className={classes.aboutMeintro}>
                 <img src={profilephoto} alt='Mostafa Elnaggar'/>
                 <p>
-                    Hi! My name is Mostafa Elnaggar. I'm a Web Developer. <br /> And i'm very passionate
-                    and dedicated to my work. <br /> With a good experience as a professional Web Developer, <br />
-                    I have acquried the skills and knowledge necessary <br /> To make your project a success.
+                    Hi! My name is Mostafa Elnaggar. I'm a Web Developer. <br /> 
+                    As an accomplished Front-End Developer,
+                    I possess a strong focus on crafting engaging user interfaces and optimizing digital experiences.
+                    Proficient in HTML, CSS, JavaScript and React.js.
+                    My practical experience includes 2-months as a Frontend developer in tasahel company
+                    where I gained hands-on experience in software development, front-end development and UX enhancement. <br /> 
+                    Eager to leverage this experience, along with academic knowledge and problem-solving skills, <br /> 
+                    to significantly contribute to a Front-End Developer
                 </p>
             </div>
 
@@ -36,7 +44,7 @@ const AboutMe = () => {
                         </li>
                         <li>
                             <strong>Job:</strong>
-                            <span>Freelancer, Frontend Developer</span>
+                            <span>Frontend Developer</span>
                         </li>
                         <li>
                             <strong>Email:  </strong>
@@ -49,41 +57,18 @@ const AboutMe = () => {
                 <div className={classes.aboutMeInfoSkills}>
                     <h1>Skills</h1>
                     <ul>
-                        <li>
-                            <strong>HTML <span>95%</span></strong>
-                            <div className={classes.progressBar}>
-                                <div className={classes.htmlprogress}></div>
-                            </div>
-                            {/* <span>95%</span> */}
-                        </li>
-                        <li>
-                            <strong>CSS <span>92%</span></strong>
-                            <div className={classes.progressBar}>
-                                <div className={classes.cssprogress}></div>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <strong>JavaScript <span>88%</span></strong>
-                            <div className={classes.progressBar}>
-                                <div className={classes.javascriptprogress}></div>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <strong>Reactjs <span>85%</span></strong>
-                            <div className={classes.progressBar}>
-                                <div className={classes.reactjsprogress}></div>
-                            </div>
-                            
-                        </li>
-                        <li>
-                            <strong>Java <span>60%</span></strong>
-                            <div className={classes.progressBar}>
-                                <div className={classes.javaprogress}></div>
-                            </div>
-                            
-                        </li>
+                        <li><strong>HTML</strong></li>
+                        <li><strong>CSS</strong></li>
+                        <li><strong>JavaScript</strong></li>
+                        <li><strong>ReactJs</strong></li>
+                        <li><strong>BootStrap</strong></li>
+                        <li><strong>OOP</strong></li>
+                        <li><strong>Data Structure</strong></li>
+                        <li><strong>DataBase</strong></li>
+                        <li><strong>SQL</strong></li>
+                        <li><strong>MUI</strong></li>
+                        <li><strong>Java</strong></li>
+                        <li><strong>C#</strong></li>
                     </ul>
                 </div>
             </div>

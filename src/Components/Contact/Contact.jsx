@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import phoneCall from '../../Assets/phoneCall.png';
 import mail from '../../Assets/mail.png';
@@ -8,14 +8,16 @@ import classes from './Contact.module.css';
 
 const Contact = () => {
     
-    const [linkedinUrl, setLinkedinUrl] = useState('https://www.linkedin.com/in/mostafa-el-naggar-074bb91b2/');
+    const linkedinUrl = 'https://www.linkedin.com/in/mostafa-el-naggar-074bb91b2/';
     
     const handleLinkedinClick = () => {
         window.open(linkedinUrl, '_blank');
     };
 
     return(
-        <div className={classes.contact}>
+
+        <div className={classes.contact} id='ContactMe'>
+            
             <div className={classes.contactHeader}>
                 <h5>Get in touch</h5>
                 <h1>I'd Love To Hear From You.</h1>
