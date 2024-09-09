@@ -16,7 +16,7 @@ const Home = () => {
         <div className={classes.home}>
             <div className={classes.homecontent}>
                 <div className={classes.homecontentinfo}>
-                    <h5>HELLO, WORLD.</h5>
+                    <h5>HELLO.</h5>
                     <h1>I'm Mostafa Elnaggar.</h1>
                     <p>
                         <span>Front-end Developer</span>
