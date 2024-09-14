@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.25b331a7.css",
-    "main.js": "/Portfolio/static/js/main.3f28086c.js",
+    "main.css": "/Portfolio/static/css/main.8c18a63a.css",
+    "main.js": "/Portfolio/static/js/main.89b1db82.js",
     "static/media/INFlow.png": "/Portfolio/static/media/INFlow.40949e9235161a954b70.png",
     "static/media/FoodOrderApp.png": "/Portfolio/static/media/FoodOrderApp.9ffc1b78b539eb925549.png",
     "static/media/homebackground.jpg": "/Portfolio/static/media/homebackground.1a8c58441daedced6444.jpg",
@@ -14,11 +14,11 @@
     "static/media/mail.png": "/Portfolio/static/media/mail.2c378c9ee25927123f7d.png",
     "static/media/phoneCall.png": "/Portfolio/static/media/phoneCall.d35848942c955a6232b3.png",
     "index.html": "/Portfolio/index.html",
-    "main.25b331a7.css.map": "/Portfolio/static/css/main.25b331a7.css.map",
-    "main.3f28086c.js.map": "/Portfolio/static/js/main.3f28086c.js.map"
+    "main.8c18a63a.css.map": "/Portfolio/static/css/main.8c18a63a.css.map",
+    "main.89b1db82.js.map": "/Portfolio/static/js/main.89b1db82.js.map"
   },
   "entrypoints": [
-    "static/css/main.25b331a7.css",
-    "static/js/main.3f28086c.js"
+    "static/css/main.8c18a63a.css",
+    "static/js/main.89b1db82.js"
   ]
 }
