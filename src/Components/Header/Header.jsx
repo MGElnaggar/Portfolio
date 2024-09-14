@@ -83,7 +83,6 @@ const Header = () => {
         }
     };
     const handleContactClick = () => {
-        // 
         const contactMeSection = document.getElementById('ContactMe');
         if (contactMeSection) {
             contactMeSection.scrollIntoView({
