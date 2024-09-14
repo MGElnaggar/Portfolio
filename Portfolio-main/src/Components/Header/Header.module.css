@@ -1,0 +1,322 @@
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 55;
+    height: 91.3px;
+}
+.scrolledHeader{
+    background-color:white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: inline-block;
+    padding: 22px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.logo img{
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    width: 30px;
+    
+}
+
+.logo p{
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.scrolledLogo{
+    display: inline-block;
+    padding: 22px 0;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.scrolledLogo img{
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    width: 30px;
+}
+
+.scrolledLogo p{
+    display: inline-block;
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    color: black;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* navbar and its tags */
+
+
+.navbar{
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+    padding: 12px 15px;
+}
+
+.navtags{
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.navtags ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 120px;     
+}
+
+.navtags ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.navtags ul li a{
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    color: #ffffff;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.scrollednavtags ul li a{
+    font-size: 15px;
+    font-family: "Play", sans-serif;
+    color: black;
+    display: block;
+    text-transform: uppercase;
+    position: relative;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+
+/* the bar the upper the tag , its style and when hover and when active */
+
+
+.navtags ul li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* Start the underline from the middle of the link */
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #ffffff; 
+    transition: width 0.7s;  
+}
+
+.scrollednavtags ul li a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;  /* Start the underline from the middle of the link */
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.7s;  
+}
+.navtags ul li a:hover:after {
+    width: 100%; 
+}
+
+.navtags ul li a.active:after {
+    width: 100%;
+}
+
+.seperator{
+    font-size: 1rem;
+    color: white;
+}
+.scrolledSeperator{
+    font-size: 1rem;
+    color: black;
+}
+
+.social{
+    display: inline-block;
+    padding-left: 80px;
+}
+.social button{
+    background-color: transparent;
+    border-radius: 20px;
+    border-color: transparent;
+    width: 50px;
+    margin-right: 20px;
+}
+.social img{
+    cursor: pointer;
+    width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-style: none;
+    color: white;
+}
+
+.scrolledsocial img{
+    color: black;
+}
+
+/* begainning of the @media to make the page responsive */
+
+
+@media (max-width:1290px) {
+    .container{
+        width:90%;
+    }
+}
+@media (max-width:1193px) {
+    .navtags{
+        margin-right: 25px;
+    }
+    .navtags ul{
+        padding-inline-start: 70px;     
+    }
+}
+@media (max-width:1116px) {
+    .navtags{
+        margin-right: 0px;
+    }
+    .navtags ul{
+        padding-inline-start: 40px;     
+    }
+    .social{
+        padding-left: 40px;
+    }
+}
+@media (max-width:1056px) {
+    .container{
+        width:90%;
+    }
+    
+    .navtags ul{
+        padding-inline-start: 20px;     
+    }
+    .navtags ul li{
+        margin-right: 25px;
+    }
+}
+@media (max-width:953px) {
+    .navtags ul{
+        padding-inline-start: 20px;     
+    }
+    .social{
+        padding-left: 20px;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    .navbar {
+      display: none;
+    }
+  
+    .mobileMenu {
+      display: inline-block;
+      align-items: center;
+      cursor: pointer;
+      position: absolute;
+      top: 23px; 
+      right: 40px;
+    }
+  
+    .mobileMenu span {
+      font-size: 40px;
+      color: white;
+    }
+
+    .scrolledMobileMenu span{
+        color: black;
+    }
+  
+    .mobileNav {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 80px; 
+      right: 20px;
+      background-color: #333;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 20px;
+    }
+  
+    .mobileNav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .mobileNav li {
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  
+    .mobileNav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+  
+    .mobileSocial img {
+      width: 30px;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+}
+
+@media (max-width:410px) {
+    .logo p{
+        font-size: 13px;
+    }
+    .scrolledLogo p{
+        font-size: 13px;
+    }
+    .mobileMenu span {
+        font-size: 30px;
+        color: white;
+      }
+      .scrolledMobileMenu span{
+        color: black;
+    }
+}

@@ -1,0 +1,136 @@
+.contact{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+}
+
+.contactHeader h5{
+    text-align: center      ;
+    color: #FF0077;
+    font-size: 1rem;
+    line-height: 1.875;
+    margin-bottom: 0.3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    font-family: "poppins-bold", sans-serif;
+    font-style: normal;
+    display: block;
+    margin-block-start: 1.67em; /* need to be understood */
+    margin-block-end: 1.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.contactHeader h1{
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 2.4rem;
+    color: #313131;
+    line-height: 1.05;
+    display: block;
+    margin-bottom: 1.2rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -.05rem;
+}
+
+.contactHeader p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    font-family: "lora-regular", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #888888;
+    text-align: center;
+}
+
+.contactContent{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -10px;
+}
+
+@media (max-width:899px) {
+    .contactContent{
+        justify-content: space-between;
+        flex-direction: column; /* Stack divs vertically */
+        align-items: center; /* Center divs horizontally */
+    }
+    .mail,
+    .phone,
+    .linkedIn {
+        width: 100%;
+    }
+}
+
+.mail,
+.phone{
+    flex: 0 0 calc(40% - 20px);
+    margin: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+}
+
+.linkedIn{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 0 0 calc(40% - 20px);
+    border-radius: 20px;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+}
+
+.mail img,
+.phone img,
+.linkedIn img {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.mail h2,
+.phone h2,
+.linkedIn h2{
+    font-size: 1rem;
+    line-height: 1.14;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    color: #FF0077;
+}
+
+.mail p,
+.phone p{
+    font-family: "poppins-regular", sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: #6e6e6e;
+    word-break: break-all;
+}
+
+.linkedIn button{
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: transparent;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.linkedIn button:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
