@@ -11,7 +11,7 @@ const Header = () => {
 
     const [isMobile, setIsMobile] = useState(false);
     const [isDropdownOpen, setDropdownOpen] = useState(false);
-    const linkedinUrl = 'https://www.linkedin.com/in/mostafa-el-naggar-074bb91b2/';
+    const linkedinUrl = 'https://www.linkedin.com/in/mostafa-elnaggar-074bb91b2/';
     const githubUrl = 'https://github.com/MGElnaggar';
     const [scrollPosition, setScrollPosition] = useState(0);
 
