@@ -1,6 +1,6 @@
 import FoodOrderApp from '../../Assets/FoodOrderApp.png';
 import TaskTrack from '../../Assets/todoList.png';
-import GroupManagement from '../../Assets/groupManagement.png';
+import Furniture from '../../Assets/Furniture.png';
 import Inflow from '../../Assets/INFlow.png';
 
 import classes from './Projects.module.css';
@@ -9,11 +9,11 @@ const Projects = () => {
 
     const projectList = [
         {
-            title: 'Task Track',
-            description: 'Task Track Application allows users to manage tasks with a dynamic todo list, fetch data using a custom useFetch hook, and register with a validated form, ensuring efficient task tracking and data management. And all done by TypeScript',
-            image: TaskTrack,
-            siteLink: 'https://mgelnaggar.github.io/Task-Track/',
-            codeLink: 'https://github.com/MGElnaggar/Task-Track'
+            title: 'Furniture',
+            description: 'Furniture is an online shopping platform dedicated to providing customers with a variety of home essentials.',
+            image: Furniture,
+            siteLink: 'https://mgelnaggar.github.io/Furniture/',
+            codeLink: 'https://github.com/MGElnaggar/Furniture'
         },
         {
             title: 'Order & Eat',
@@ -23,17 +23,17 @@ const Projects = () => {
             codeLink: 'https://github.com/MGElnaggar/Order-And-Eat'
         },
         {
-            title: 'Group Management',
-            description: 'Group Management is a web application that allows users to create, view, update, and delete groups. Additionally, users can create and view posts within each group.',
-            image: GroupManagement,
-            siteLink: 'https://mgelnaggar.github.io/Group-Management/',
-            codeLink: 'https://github.com/MGElnaggar/Group-Management'
-        },
-        {
             title: 'INFlow',
             description: 'Inflow is a mental help web application designed to help users accurately diagnose emotional health conditions based on the Lüscher Color Test System.',
             image: Inflow,
             videoLink: 'https://drive.google.com/drive/folders/1yNsxK4bdHYgR89D0iCiU8PA7DVjxHqFo'
+        },
+        {
+            title: 'Task Track',
+            description: 'Task Track Application allows users to manage tasks with a dynamic todo list, fetch data using a custom useFetch hook, and register with a validated form, ensuring efficient task tracking and data management. And all done by TypeScript',
+            image: TaskTrack,
+            siteLink: 'https://mgelnaggar.github.io/Task-Track/',
+            codeLink: 'https://github.com/MGElnaggar/Task-Track'
         }
     ];
 
