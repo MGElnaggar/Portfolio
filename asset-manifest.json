@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.8c18a63a.css",
-    "main.js": "/Portfolio/static/js/main.f8a4f539.js",
+    "main.js": "/Portfolio/static/js/main.550ae60b.js",
     "static/media/INFlow.png": "/Portfolio/static/media/INFlow.40949e9235161a954b70.png",
     "static/media/FoodOrderApp.png": "/Portfolio/static/media/FoodOrderApp.9ffc1b78b539eb925549.png",
     "static/media/homebackground.jpg": "/Portfolio/static/media/homebackground.1a8c58441daedced6444.jpg",
+    "static/media/Furniture.png": "/Portfolio/static/media/Furniture.e16dcf5fe9c9be459b4c.png",
     "static/media/MostafaElNaggar.pdf": "/Portfolio/static/media/MostafaElNaggar.3bc45e781c31f7388786.pdf",
     "static/media/profilephoto.jpeg": "/Portfolio/static/media/profilephoto.5043b02e82e25e15dded.jpeg",
     "static/media/todoList.png": "/Portfolio/static/media/todoList.11eb6c00f26f54082f3f.png",
-    "static/media/groupManagement.png": "/Portfolio/static/media/groupManagement.bd0e4efe5001b876cff1.png",
     "static/media/code.png": "/Portfolio/static/media/code.bfe3593bdb74aa231876.png",
     "static/media/github2.png": "/Portfolio/static/media/github2.44eee0c4a6c25b0d7347.png",
     "static/media/mail.png": "/Portfolio/static/media/mail.2c378c9ee25927123f7d.png",
     "static/media/phoneCall.png": "/Portfolio/static/media/phoneCall.d35848942c955a6232b3.png",
     "index.html": "/Portfolio/index.html",
     "main.8c18a63a.css.map": "/Portfolio/static/css/main.8c18a63a.css.map",
-    "main.f8a4f539.js.map": "/Portfolio/static/js/main.f8a4f539.js.map"
+    "main.550ae60b.js.map": "/Portfolio/static/js/main.550ae60b.js.map"
   },
   "entrypoints": [
     "static/css/main.8c18a63a.css",
-    "static/js/main.f8a4f539.js"
+    "static/js/main.550ae60b.js"
   ]
 }
